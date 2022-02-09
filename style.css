@@ -30,6 +30,22 @@ body {
     background: var(--body-color);
 }
 
+/* === Resuable"Reutilizável" CSS === */
+
+.sidebar .text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.sidebar .image {
+    min-width: 60px; /* ?? */
+    display: flex;
+    align-items: center;
+}
+
+/* === SideBar === */
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -40,9 +56,14 @@ body {
     background: var(--sidebar-color);
 }
 
-/* === Resuble CSS === */
+.sidebar li{
 
-/* === SideBar === */
+}
+
+.sidebar header {
+    position: relative;
+}
+
 .sidebar .image-text img {
     width: 40px;
     border-radius: 6px;   
@@ -51,6 +72,34 @@ body {
 .sidebar header .image-text {
     display: flex;
     align-items: center;
+}
 
+header .image-text .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name {
+    font-weight: 600;
+}
+
+.header-text .profession {
+    margin-top: -2px;
+}
+
+.sidebar header .toggle {
+    position: absolute; /* ?? */
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sidebar-color);
+    font-size: 22px;  
 }
 

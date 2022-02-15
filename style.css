@@ -28,7 +28,7 @@
 body {
     height: 100vh;
     background: var(--body-color);
-    transition: var(--tran-04);
+    transition: var(--tran-05);
 }
 
 body.dark {
@@ -58,11 +58,15 @@ body.dark {
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
+    z-index: 100;
 }
 
 .sidebar.close {
     width: 88px;
+}
 
+.sidebar.close .mode-text {
+    opacity: 0;
 }
 
 /* === Resuable"Reutilizável" CSS === */
@@ -74,6 +78,10 @@ body.dark {
     white-space: nowrap;
     opacity: 1;
 }
+
+.sidebar .menu {
+    margin-top: 35px;
+} 
 
 .sidebar.close .text {
     opacity: 0;
@@ -164,8 +172,6 @@ body.dark .sidebar header .toggle {
     border-radius: 6px;
 }
 
-
-
 .search-box input {
     height: 100%;
     width: 100%;
@@ -233,6 +239,10 @@ body.dark .sidebar li a:hover .text {
     opacity: 0;
 }
 
+.mode .sun-moon i.moon {
+    opacity: 1;
+}
+
 body.dark .mode .sun-moon i.sun {
     opacity: 1;
 }
@@ -278,4 +288,30 @@ body.dark .mode .sun-moon i.moon {
 
 body.dark .switch::before {
     left: 20px;
+}
+
+.mode .mode-text {
+    color: var(--text-color);
+    transition: var(--tran-02);
+    font-weight: 500;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    left: 250px;
+    width: calc(100% -250px);
+    background: var(--body-color);
+}
+
+.home .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+.sidebar.close ~ .home {
+    left: 88px;
+    width: calc(100% -88px);
 }

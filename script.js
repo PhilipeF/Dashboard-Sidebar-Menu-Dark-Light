@@ -9,13 +9,18 @@ toggle.addEventListener('click', () => {
     sidebar.classList.toggle("close");
 });
 
+searchBtn.addEventListener('click', () => {
+    sidebar.classList.remove("close");
+});
+
+// Mudando o texto 
 modeSwitich.addEventListener("click", () => {
     body.classList.toggle("dark");
-
-    if(body.classList.contains("dark")){
-        modeText.innerText = 'Light Mode'
+    
+    if(body.classList.contains("dark")) {
+        modeText.innerText = "Light Mode"
     } else {
-        modeText.innerText = 'Dark Mode'
+        modeText.innerText = "Dark Mode"
     }
 })
 

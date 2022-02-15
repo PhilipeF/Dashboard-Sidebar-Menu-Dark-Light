@@ -28,6 +28,16 @@
 body {
     height: 100vh;
     background: var(--body-color);
+    transition: var(--tran-04);
+}
+
+body.dark {
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #3A3B3C;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: #CCC;
 }
 
 .sidebar .image {
@@ -47,6 +57,12 @@ body {
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+
+.sidebar.close {
+    width: 88px;
+
 }
 
 /* === Resuable"Reutilizável" CSS === */
@@ -54,6 +70,17 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
+    transition: var(--tran-04);
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+}
+
+.sidebar.close .sun-moon {
+    opacity: 0;
 }
 
 .sidebar li {
@@ -111,7 +138,7 @@ header .image-text .header-text {
     /* ?? */
     top: 50%;
     right: -25px;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
     /* ?? */
     height: 25px;
     width: 25px;
@@ -124,9 +151,20 @@ header .image-text .header-text {
     font-size: 22px;
 }
 
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+.sidebar.close header .toggle {
+    transform: translateY(-50%);
+}
+
 .sidebar .search-box {
     background: var(--primary-color-light);
+    border-radius: 6px;
 }
+
+
 
 .search-box input {
     height: 100%;
@@ -134,7 +172,10 @@ header .image-text .header-text {
     outline: none;
     border: none;
     border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
     background: var(--primary-color-light);
+    color: var(--text-color);
 }
 
 .sidebar li a {
@@ -151,10 +192,14 @@ header .image-text .header-text {
     background: var(--primary-color);
 }
 
-
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text {
     color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color)
 }
 
 .sidebar .menu-bar {
@@ -166,39 +211,55 @@ header .image-text .header-text {
 }
 
 .menu-bar .mode {
+    position: relative;
+    border-radius: 6px;
     background: var(--primary-color-light);
 }
 
-.menu-bar .mode .moon-sun {
+.menu-bar .mode .sun-moon {
     height: 50px;
     width: 60px;
+    /* alinhando os itens */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.menu-bar .mode i {
-    position: relative;
+.mode .sun-moon i {
+    position: absolute;
 }
 
-.menu-bar .mode i.sun {
+.mode .sun-moon i.sun {
     opacity: 0;
 }
 
-.menu-bar .mode .toggle-switch {
+body.dark .mode .sun-moon i.sun {
+    opacity: 1;
+}
+
+body.dark .mode .sun-moon i.moon {
+    opacity: 0;
+}
+
+.menu-bar .botton-content .toggle-switch {
+    position: absolute;
+    right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     min-width: 60px;
-
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .toggle-switch .switch {
     position: relative;
     height: 22px;
-    width: 44px;
+    width: 40px;
     border-radius: 25px;
     background: var(--toggle-color);
+    transition: var(--tran-05);
 }
 
 .switch::before {
@@ -212,4 +273,9 @@ header .image-text .header-text {
     left: 5px;
     transform: translateY(-50%);
     background: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+
+body.dark .switch::before {
+    left: 20px;
 }

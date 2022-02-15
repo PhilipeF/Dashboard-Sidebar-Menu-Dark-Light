@@ -17,7 +17,5 @@ modeSwitich.addEventListener("click", () => {
     } else {
         modeText.innerText = 'Dark Mode'
     }
-
-
 })
 

@@ -34,5 +34,6 @@ Execute usando a extensão Live Server do vscode.
 
 
 <h2>Abaixo um vídeo do projeto. 📹</h2>
+<br>
 
 https://user-images.githubusercontent.com/64853039/154373728-a1394db8-75d4-48bf-b1d4-35b8da614e0f.mp4

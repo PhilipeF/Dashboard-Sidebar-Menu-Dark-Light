@@ -14,8 +14,6 @@
 <img src="https://img.shields.io/badge/CSS-1e79e2?&style=for-the-badge&logo=css3&logoColor=white">
 
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-<br>
-<br>
 
 ## Como executar 
 <br>
@@ -29,7 +27,7 @@ https://github.com/PhilipeF/Dashboard-Sidebar-Menu-Dark-Light.git
 
 ```
 
-Execute usando a extensão de vscode Live Server. 
+Execute usando a extensão Live Server do vscode. 
 
 <h2 align="center">Abaixo um vídeo do projeto. 📹</h2>
 

@@ -29,6 +29,6 @@ https://github.com/PhilipeF/Dashboard-Sidebar-Menu-Dark-Light.git
 
 Execute usando a extensão Live Server do vscode. 
 
-<h2 align="center">Abaixo um vídeo do projeto. 📹</h2>
+<h2>Abaixo um vídeo do projeto. 📹</h2>
 
 <video src='video/apresentacao.webm' type="video/webm"></video>

@@ -4,9 +4,10 @@
 <br>
 
 <p>Projeto desenvolvido com intuito em praticar minhas habilidades em CSS/HTML e JavaScript. Trata-se de um Dashboard Sidebar Menu | Dark Mode. Seguindo orientações da <a href="https://www.codinglabweb.com/"> CodingLab </a> que é um site ideal para quem quer treinar suas habilidades como desenvolvedor front end. 
-</p
+</p>
 
-## Skills 
+## Skills
+  
 <br>
 <br>
 

@@ -28,6 +28,7 @@ https://github.com/PhilipeF/Dashboard-Sidebar-Menu-Dark-Light.git
 ```
 
 Execute usando a extensão Live Server do vscode. 
+<br>
 
 
 

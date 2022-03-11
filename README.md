@@ -27,13 +27,13 @@ Clone o projeto e acesse a pasta do mesmo
 https://github.com/PhilipeF/Dashboard-Sidebar-Menu-Dark-Light.git
 
 ```
+```
+Para executar o projeto foi tulizado a extensão Live Server do vscode
 
-Execute o usando a extensão Live Server do vscode. 
+```
+
 <br>
 <br>
-
-
-
 
 
 <h2>Abaixo um vídeo do projeto. 📹</h2>
